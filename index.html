@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Yamil Castellar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon1.png">
+</head>
+<body>
+
+    <header>
+        <h1>Hoja de Vida - Yamil</h1>
+        <nav>
+            <ul>
+                <li><a href="#perfil">PERFIL</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <p>Soy Yamil, estudiante de la IUB. Estoy dando mis primeros pasos aprendiendo HTML y CSS. Siempre me ha gustado lo estético y lo creativo, se me hace muy bueno poder aplicarlo en esto de crear páginas web. Le estoy metiendo ganas practicando con proyectos como este.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Estos son algunos de los ejercicios prácticos que hicimos en clase. Debajo de cada uno se describe un poco las tecnologías y se muestra cómo quedaron.</p>
+
+            <div class="proyectos-container">
+
+                <article class="proyecto-card">
+                    <img src="gato.jpg" alt="Vista previa de CatPhotoApp">
+                    <h3>CatPhotoApp</h3>
+                    <p><strong>Descripción:</strong> Proyecto para practicar HTML básico y etiquetado semántico.</p>
+                     <table>
+                        <thead>
+                            <tr>
+                                <th>Tecnología</th>
+                                <th>Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>Estructura del sitio</td>
+                            </tr>
+                            <tr>
+                                <td>CSS3</td>
+                                <td>Estilos básicos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <article class="proyecto-card">
+                    <div class="icono-cafe">☕</div>
+                    <h3>CSS Café</h3>
+                    <p><strong>Descripción:</strong> Maquetación y estilos de un menú tipo café, con transiciones y diseño responsive.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tecnología</th>
+                                <th>Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>Estructura</td>
+                            </tr>
+                            <tr>
+                                <td>CSS3</td>
+                                <td>Maquetación y responsive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+            </div>
+        </section>
+
+  <section id="contacto">
+             <h2>Contacto</h2>
+             <p>Si necesitas algo más de información sobre otros proyectos, llena el siguiente formulario:</p>
+             
+             <form action="#" method="post">
+                 <div class="form-group">
+                     <label for="nombre">Nombre:</label>
+                     <input type="text" id="nombre" name="nombre" required> 
+                 </div>
+                 <div class="form-group">
+                     <label for="correo">Correo electrónico:</label>
+                     <input type="email" id="correo" name="correo" required> 
+                 </div>
+                 <div class="form-group">
+                     <label for="mensaje">Mensaje:</label>
+                     <textarea id="mensaje" name="mensaje" rows="5" required></textarea> 
+                 </div>
+                 <button type="submit" class="submit-btn">Enviar</button>
+             </form>
+        </section>
+    </main>
+
+    <footer>
+         <p>&copy; 2025 - Yamil. Ejemplo de hoja de vida estática en HTML y CSS.</p>
+    </footer>
+
+</body>
+</html>
